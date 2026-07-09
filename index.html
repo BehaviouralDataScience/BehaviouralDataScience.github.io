@@ -13,6 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -49,6 +50,7 @@
   ]
 }
 </script>
+
 <style>
 :root{
   --ink:#1E1A3C; --ink-soft:#3A3468; --paper:#F7F5EF; --card:#FFFFFF;
@@ -68,6 +70,7 @@ a{color:var(--peri)}
 .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:var(--coral)}
 h2{font-family:var(--display);font-weight:600;font-size:clamp(26px,4vw,36px);color:var(--ink);margin:8px 0 8px}
 section{padding:72px 0}
+
 /* nav */
 nav{position:sticky;top:0;background:rgba(247,245,239,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;padding:14px 24px;max-width:1080px;margin:0 auto}
@@ -75,6 +78,7 @@ nav{position:sticky;top:0;background:rgba(247,245,239,.92);backdrop-filter:blur(
 .nav-links{display:flex;gap:22px;font-size:14px}
 .nav-links a{color:var(--ink-soft);text-decoration:none}
 .nav-links a:hover{color:var(--coral)}
+
 /* hero */
 .hero{padding:88px 0 72px;background:var(--ink);color:#F5F2EA}
 .hero-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:48px;align-items:center}
@@ -85,12 +89,14 @@ nav{position:sticky;top:0;background:rgba(247,245,239,.92);backdrop-filter:blur(
 .hero .cta{display:inline-block;margin-top:26px;margin-right:12px;padding:12px 22px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px}
 .cta.primary{background:var(--coral);color:#fff}
 .cta.ghost{border:1px solid #4A4380;color:#E4E1F5}
+
 /* definitions */
 .defs{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:28px}
 .def{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--peri);border-radius:12px;padding:24px}
 .def:last-child{border-left-color:var(--teal)}
 .def h3{font-family:var(--display);font-size:20px;color:var(--ink);margin-bottom:8px}
 .def p{font-size:15px;color:var(--muted)}
+
 /* handbook */
 #handbook{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .book-grid{display:grid;grid-template-columns:220px 1fr;gap:44px;align-items:start}
@@ -99,6 +105,7 @@ nav{position:sticky;top:0;background:rgba(247,245,239,.92);backdrop-filter:blur(
 .btn-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:14px}
 button.copy,a.linkbtn{font-family:var(--body);font-size:14px;font-weight:500;padding:9px 16px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;text-decoration:none}
 button.copy:hover,a.linkbtn:hover{border-color:var(--peri);color:var(--peri)}
+
 /* videos */
 .filters{display:flex;gap:8px;flex-wrap:wrap;margin:20px 0 26px}
 .filters button{font-family:var(--body);font-size:13px;padding:7px 15px;border-radius:999px;border:1px solid var(--line);background:var(--card);cursor:pointer;color:var(--ink-soft)}
@@ -111,38 +118,52 @@ button.copy:hover,a.linkbtn:hover{border-color:var(--peri);color:var(--peri)}
 .chap .auth{font-size:12.5px;color:var(--muted)}
 .chap a.watch{font-size:13px;font-weight:600;text-decoration:none;margin-top:auto}
 .chap span.soon{font-size:13px;color:var(--muted);margin-top:auto}
+
 /* library */
 .lib-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:26px}
 .lib{border-radius:14px;padding:24px;text-decoration:none;border:1px solid var(--line);background:var(--card)}
 .lib h3{font-family:var(--display);font-size:19px;margin-bottom:6px}
 .lib p{font-size:14px;color:var(--muted)}
 .lib .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:6px;margin-bottom:12px}
+
 /* about */
 #about{background:var(--ink);color:#E4E1F5}
 #about h2{color:#F5F2EA}
 #about .eyebrow{color:#F0997B}
 #about p{max-width:70ch;color:#C9C4E8}
 #about a{color:#AFA9EC}
+
 footer{padding:34px 0;font-size:13px;color:var(--muted);border-top:1px solid var(--line)}
+
 @media (max-width:800px){
   .hero-grid,.book-grid,.defs{grid-template-columns:1fr}
   .nav-links{display:none}
   .hero svg{max-width:340px;margin:0 auto}
 }
+
 @media (prefers-reduced-motion:reduce){
   .chap{transition:none}
   .pulse{animation:none!important}
 }
+
 @keyframes pulse{0%,100%{opacity:.85}50%{opacity:.35}}
 .pulse{animation:pulse 4s ease-in-out infinite}
 </style>
 </head>
+
 <body>
 
 <nav>
   <div class="nav-inner">
     <a class="brand" href="#top">
-      <svg width="24" height="24" viewBox="0 0 26 26" aria-hidden="true"><circle cx="6" cy="19" r="3" fill="#D85A30"/><circle cx="13" cy="8" r="3" fill="#7F77DD"/><circle cx="21" cy="16" r="3" fill="#1D9E75"/><line x1="6" y1="19" x2="13" y2="8" stroke="#8884AE" stroke-width="1.2"/><line x1="13" y1="8" x2="21" y2="16" stroke="#8884AE" stroke-width="1.2"/><line x1="6" y1="19" x2="21" y2="16" stroke="#8884AE" stroke-width="1.2"/></svg>
+      <svg width="24" height="24" viewBox="0 0 26 26" aria-hidden="true">
+        <circle cx="6" cy="19" r="3" fill="#D85A30"/>
+        <circle cx="13" cy="8" r="3" fill="#7F77DD"/>
+        <circle cx="21" cy="16" r="3" fill="#1D9E75"/>
+        <line x1="6" y1="19" x2="13" y2="8" stroke="#8884AE" stroke-width="1.2"/>
+        <line x1="13" y1="8" x2="21" y2="16" stroke="#8884AE" stroke-width="1.2"/>
+        <line x1="6" y1="19" x2="21" y2="16" stroke="#8884AE" stroke-width="1.2"/>
+      </svg>
       Behavioural Data Science
     </a>
     <div class="nav-links">
@@ -163,13 +184,19 @@ footer{padding:34px 0;font-size:13px;color:var(--muted);border-top:1px solid var
       <a class="cta primary" href="#handbook">Explore the Handbook</a>
       <a class="cta ghost" href="#library">Browse the library</a>
     </div>
+
     <svg viewBox="0 0 320 280" role="img" aria-label="A constellation of connected data points" width="100%">
       <g stroke="#4A4380" stroke-width="1.1">
-        <line x1="50" y1="220" x2="120" y2="140"/><line x1="120" y1="140" x2="200" y2="175"/>
-        <line x1="200" y1="175" x2="270" y2="80"/><line x1="120" y1="140" x2="175" y2="55"/>
-        <line x1="175" y1="55" x2="270" y2="80"/><line x1="50" y1="220" x2="180" y2="240"/>
-        <line x1="180" y1="240" x2="200" y2="175"/><line x1="270" y1="80" x2="295" y2="170"/>
-        <line x1="180" y1="240" x2="295" y2="170"/><line x1="60" y1="90" x2="50" y2="220"/>
+        <line x1="50" y1="220" x2="120" y2="140"/>
+        <line x1="120" y1="140" x2="200" y2="175"/>
+        <line x1="200" y1="175" x2="270" y2="80"/>
+        <line x1="120" y1="140" x2="175" y2="55"/>
+        <line x1="175" y1="55" x2="270" y2="80"/>
+        <line x1="50" y1="220" x2="180" y2="240"/>
+        <line x1="180" y1="240" x2="200" y2="175"/>
+        <line x1="270" y1="80" x2="295" y2="170"/>
+        <line x1="180" y1="240" x2="295" y2="170"/>
+        <line x1="60" y1="90" x2="50" y2="220"/>
         <line x1="60" y1="90" x2="120" y2="140"/>
       </g>
       <circle cx="60" cy="90" r="7" fill="#F0997B" class="pulse"/>
@@ -223,7 +250,7 @@ footer{padding:34px 0;font-size:13px;color:var(--muted);border-top:1px solid var
   <div class="wrap">
     <p class="eyebrow">Chapter-by-chapter</p>
     <h2>Video overviews of every chapter</h2>
-    <p style="max-width:64ch;color:var(--muted)">Short AI-assisted video explainers (generated with NotebookLM, reviewed by the editors) for all 44 chapters — added part by part as they are produced.</p>
+    <p style="max-width:64ch;color:var(--muted)">Short AI-assisted video explainers generated with NotebookLM and reviewed by the editors for all 44 chapters — added part by part as they are produced.</p>
     <div class="filters" id="filters" role="group" aria-label="Filter chapters by part"></div>
     <div class="chap-grid" id="chapGrid"></div>
   </div>
@@ -237,19 +264,23 @@ footer{padding:34px 0;font-size:13px;color:var(--muted);border-top:1px solid var
     <div class="lib-grid">
       <a class="lib" href="https://github.com/BehaviouralDataScience/awesome-behavioural-data-science#books">
         <span class="tag" style="background:var(--peri-soft);color:var(--peri)">Books</span>
-        <h3>Books</h3><p>From the Handbook and The Missing B in AI to the behavioural science canon.</p>
+        <h3>Books</h3>
+        <p>From the Handbook and The Missing B in AI to the behavioural science canon.</p>
       </a>
       <a class="lib" href="https://github.com/BehaviouralDataScience/awesome-behavioural-data-science#foundational-papers">
         <span class="tag" style="background:var(--teal-soft);color:var(--teal)">Papers</span>
-        <h3>Foundational papers</h3><p>Prospect theory to machine behaviour — the papers that built the field.</p>
+        <h3>Foundational papers</h3>
+        <p>Prospect theory to machine behaviour — the papers that built the field.</p>
       </a>
       <a class="lib" href="https://github.com/BehaviouralDataScience/awesome-behavioural-data-science#degrees--university-programmes">
         <span class="tag" style="background:var(--coral-soft);color:var(--coral)">Degrees</span>
-        <h3>Degrees</h3><p>Every verified university programme in BDS worldwide, mapped and annotated.</p>
+        <h3>Degrees</h3>
+        <p>Every verified university programme in BDS worldwide, mapped and annotated.</p>
       </a>
       <a class="lib" href="https://github.com/BehaviouralDataScience/awesome-behavioural-data-science#short-courses--certificates">
         <span class="tag" style="background:var(--pink-soft);color:var(--pink)">Courses</span>
-        <h3>Short courses</h3><p>Certificates, MOOCs, and professional courses — verified list coming soon.</p>
+        <h3>Short courses</h3>
+        <p>Certificates, MOOCs, and professional courses — verified list coming soon.</p>
       </a>
     </div>
   </div>
@@ -260,7 +291,7 @@ footer{padding:34px 0;font-size:13px;color:var(--muted);border-top:1px solid var
     <p class="eyebrow">About the curator</p>
     <h2>Ganna Pogrebna</h2>
     <p>Ganna Pogrebna is Professor at Queen's University Belfast and a Senior Fellow at the Australian Strategic Policy Institute (ASPI). She is a pioneer of behavioural data science and behavioural AI, co-editor of <em>The Cambridge Handbook of Behavioural Data Science</em> (Cambridge University Press, 2026), and author of <em>The Missing B in AI</em> (2025). Her work explores how emerging technologies transform industries, customer experiences, and business models, and she advises businesses and governments on AI adoption, innovation strategy, and digital trust.</p>
-    <p style="margin-top:14px"><a href="https://behaviouraldatascience.org/">Behavioural Data Science .org</a> · <a href="https://github.com/BehaviouralDataScience">GitHub</a> 
+    <p style="margin-top:14px"><a href="https://behaviouraldatascience.org/">Behavioural Data Science .org</a> · <a href="https://github.com/BehaviouralDataScience">GitHub</a></p>
   </div>
 </section>
 
@@ -280,89 +311,151 @@ const PARTS = {
   p5:{label:"Part V · Applications",bg:"var(--coral-soft)",fg:"var(--coral)"},
   p6:{label:"Part VI · Concluding",bg:"var(--gold-soft)",fg:"var(--gold)"}
 };
-// To publish a video: paste its YouTube ID into the v field, e.g. v:"dQw4w9WgXcQ"
+
+/*
+  To publish a video, paste only the YouTube video ID into the v field.
+
+  Correct:
+  v:"uKvlBQV2rFw"
+
+  Not correct:
+  v:"https://youtu.be/uKvlBQV2rFw"
+  v:"uKvlBQV2rFw?si=oD1p9N0bE9jQbRhk"
+*/
+
 const CH = [
- {n:"—",p:"intro",t:"Introduction: How to Read This Book",a:"Ganna Pogrebna & Thomas T. Hills",v:""},
- {n:1,p:"p1",t:"History of Behavioural Data Science: Successes and Challenges",a:"Ganna Pogrebna & Thomas T. Hills", v:"uKvlBQV2rFw?si=oD1p9N0bE9jQbRhk"},
- {n:2,p:"p1",t:"Overview of Behavioural Data Science",a:"Ganna Pogrebna",v:"https://youtu.be/2pNpz45gPbI"},
- {n:3,p:"p1",t:"Behavioural Data Science: Framework and Topology of Methods",a:"Ganna Pogrebna",v:"https://youtu.be/jkL0JPL2QIA"},
- {n:4,p:"p2",t:"Behavioural Data Science for Understanding Human Decisions, Choices and Judgement",a:"Ganna Pogrebna & Thomas T. Hills",v:"https://youtu.be/Vvzz6WbLWnw"},
- {n:5,p:"p2",t:"Psychological Theories of Decision-Making under Risk",a:"Thorsten Pachur & Veronika Zilker",v:""},
- {n:6,p:"p2",t:"Prediction-Oriented Behavioural Research and Its Relationship to Classical Decision Research",a:"Ori Plonsky & Ido Erev",v:""},
- {n:7,p:"p2",t:"The ABCs of Behavioural Influence",a:"Thomas T. Hills",v:""},
- {n:8,p:"p2",t:"Word and Sentence Embedding Methods for Studying Human Behaviour",a:"Ada Aka & Sudeep Bhatia",v:""},
- {n:9,p:"p2",t:"Predictive Bayesian Modelling in Cognitive Sciences",a:"Joshua Ignatius",v:""},
- {n:10,p:"p2",t:"Human Aspects of AI-Related Risks: A Behavioural Data Science Approach",a:"Deborah Webster & Ganna Pogrebna",v:""},
- {n:11,p:"p3",t:"Generative AI and Behavioural Data Science",a:"Ganna Pogrebna",v:""},
- {n:12,p:"p3",t:"How Successful Are Existing Algorithms in Explaining and Predicting Human Behaviour?",a:"Alexander Kharlamov",v:""},
- {n:13,p:"p3",t:"Emotion and Big Data: The Elephant in the Room?",a:"Karen Renaud",v:""},
- {n:14,p:"p3",t:"Smart Bots? A Behavioural Approach to Measure the 'Intelligence' of Conversational AI Pre-ChatGPT",a:"Marisa Tschopp, Dagmar Monett, Markus Maurer & Marc Ruef",v:""},
- {n:15,p:"p3",t:"ChatGPT & Co: Exploring Conversational Abilities of Large Language Models from a Behavioural Perspective",a:"Luca Gafner, Marisa Tschopp, Teresa Windlin & Yelin Zhang",v:""},
- {n:16,p:"p3",t:"Machine Behaviour",a:"Patrick Henz",v:""},
- {n:17,p:"p3",t:"Modelling Choice Behaviour Using Artificial Intelligence",a:"Andreas Glöckner",v:""},
- {n:18,p:"p3",t:"Anthropomorphic Learning: Hybrid Modelling Approaches Combining Decision Theory and Machine Learning",a:"Ganna Pogrebna",v:""},
- {n:19,p:"p4",t:"Systems, Culture and Human–Machine Teaming",a:"Ganna Pogrebna & Thomas T. Hills",v:""},
- {n:20,p:"p4",t:"Cognitive Networks as Models of Cognition and Behaviour: An Introduction",a:"Massimo Stella",v:""},
- {n:21,p:"p4",t:"Agent-Based Modelling in Social Networks",a:"Spyros Angelopoulos",v:""},
- {n:22,p:"p4",t:"Modelling Context-Dependent Behaviour",a:"Marco Del Vecchio",v:""},
- {n:23,p:"p4",t:"A Short Primer on Historical Natural Language Processing",a:"Thomas T. Hills & Alessandro Miani",v:""},
- {n:24,p:"p4",t:"Behavioural Data in Complex Economic and Business Systems",a:"Glenn Parry",v:""},
- {n:25,p:"p4",t:"Applications of Statistical Mechanics and Cyber-Physical Systems to Behaviour",a:"Fendy Santoso",v:""},
- {n:26,p:"p4",t:"Systems Behaviour for Sustainable AI",a:"Aakanksha Jaiswal",v:""},
- {n:27,p:"p4",t:"Systems Behaviour and Experimentation",a:"Yevgen Bogodistov",v:""},
- {n:28,p:"p4",t:"Quantum Mechanics of Human Perception, Behaviour and Decision-Making",a:"Ivan S. Maksymov",v:""},
- {n:29,p:"p5",t:"Applications of Behavioural Data Science",a:"Ganna Pogrebna",v:""},
- {n:30,p:"p5",t:"Pro-Social Nudging",a:"Juliette Tobias-Webb",v:""},
- {n:31,p:"p5",t:"Social Media Analytics",a:"Rob Procter",v:""},
- {n:32,p:"p5",t:"Quantifying Luck",a:"Chengwei Liu",v:""},
- {n:33,p:"p5",t:"Quantifying the Connection between Scenic Beauty and Reported Health Using Deep Learning and Econometrics",a:"Chanuki Illushka Seresinhe",v:""},
- {n:34,p:"p5",t:"Money, Methodology and Happiness: Using Big Data to Study Causal Relationships between Income and Well-Being",a:"Gordon D. A. Brown, Edika Quispe-Torreblanca & John Gathergood",v:""},
- {n:35,p:"p5",t:"Human–Data Interaction: The Case of Databox",a:"Jon Crowcroft, Gareth Tyson & Richard Mortier",v:""},
- {n:36,p:"p5",t:"Natural Language Processing in Behavioural Data Science",a:"Marco Del Vecchio",v:""},
- {n:37,p:"p5",t:"Understanding Collective Behaviour Using Online Data and Mobile Phones",a:"Federico Botta, Tobias Preis & Helen Susannah Moat",v:""},
- {n:38,p:"p5",t:"Burstier Events: Analysing Human Memory over a Century of Events Using The New York Times",a:"Joseph L. Austerweil, Charlie Pilgrim & Kesong Cao",v:""},
- {n:39,p:"p5",t:"Behavioural Data Science in Financial Services",a:"Akshay Nayak & Pruthvi Taranath",v:""},
- {n:40,p:"p5",t:"XR, VR and AR Applications in Behavioural Data Science",a:"Toufique Soomro",v:""},
- {n:41,p:"p5",t:"On Cryptoasset Traders' Behaviour",a:"Kateryna Kononova & Anton Dek",v:""},
- {n:42,p:"p5",t:"Behavioural Data Science of Cybersecurity",a:"Ganna Pogrebna & Hung Nguyen",v:""},
- {n:43,p:"p5",t:"BDS Ethics and Governance Pre-AI Act: Data Trusts as a Governance Tool",a:"Sylvie Delacroix & Jessica Montgomery",v:""},
- {n:44,p:"p5",t:"BDS Ethics and Governance Post-AI Act: Responsible Network and Collective Choice Modelling",a:"Immaculate Motsi-Omoijiade",v:""},
- {n:"—",p:"p6",t:"Concluding Remarks",a:"Ganna Pogrebna & Thomas T. Hills",v:""}
+  {n:"—",p:"intro",t:"Introduction: How to Read This Book",a:"Ganna Pogrebna & Thomas T. Hills",v:""},
+  {n:1,p:"p1",t:"History of Behavioural Data Science: Successes and Challenges",a:"Ganna Pogrebna & Thomas T. Hills",v:"uKvlBQV2rFw"},
+  {n:2,p:"p1",t:"Overview of Behavioural Data Science",a:"Ganna Pogrebna",v:"2pNpz45gPbI"},
+  {n:3,p:"p1",t:"Behavioural Data Science: Framework and Topology of Methods",a:"Ganna Pogrebna",v:"jkL0JPL2QIA"},
+  {n:4,p:"p2",t:"Behavioural Data Science for Understanding Human Decisions, Choices and Judgement",a:"Ganna Pogrebna & Thomas T. Hills",v:"Vvzz6WbLWnw"},
+  {n:5,p:"p2",t:"Psychological Theories of Decision-Making under Risk",a:"Thorsten Pachur & Veronika Zilker",v:""},
+  {n:6,p:"p2",t:"Prediction-Oriented Behavioural Research and Its Relationship to Classical Decision Research",a:"Ori Plonsky & Ido Erev",v:""},
+  {n:7,p:"p2",t:"The ABCs of Behavioural Influence",a:"Thomas T. Hills",v:""},
+  {n:8,p:"p2",t:"Word and Sentence Embedding Methods for Studying Human Behaviour",a:"Ada Aka & Sudeep Bhatia",v:""},
+  {n:9,p:"p2",t:"Predictive Bayesian Modelling in Cognitive Sciences",a:"Joshua Ignatius",v:""},
+  {n:10,p:"p2",t:"Human Aspects of AI-Related Risks: A Behavioural Data Science Approach",a:"Deborah Webster & Ganna Pogrebna",v:""},
+  {n:11,p:"p3",t:"Generative AI and Behavioural Data Science",a:"Ganna Pogrebna",v:""},
+  {n:12,p:"p3",t:"How Successful Are Existing Algorithms in Explaining and Predicting Human Behaviour?",a:"Alexander Kharlamov",v:""},
+  {n:13,p:"p3",t:"Emotion and Big Data: The Elephant in the Room?",a:"Karen Renaud",v:""},
+  {n:14,p:"p3",t:"Smart Bots? A Behavioural Approach to Measure the 'Intelligence' of Conversational AI Pre-ChatGPT",a:"Marisa Tschopp, Dagmar Monett, Markus Maurer & Marc Ruef",v:""},
+  {n:15,p:"p3",t:"ChatGPT & Co: Exploring Conversational Abilities of Large Language Models from a Behavioural Perspective",a:"Luca Gafner, Marisa Tschopp, Teresa Windlin & Yelin Zhang",v:""},
+  {n:16,p:"p3",t:"Machine Behaviour",a:"Patrick Henz",v:""},
+  {n:17,p:"p3",t:"Modelling Choice Behaviour Using Artificial Intelligence",a:"Andreas Glöckner",v:""},
+  {n:18,p:"p3",t:"Anthropomorphic Learning: Hybrid Modelling Approaches Combining Decision Theory and Machine Learning",a:"Ganna Pogrebna",v:""},
+  {n:19,p:"p4",t:"Systems, Culture and Human–Machine Teaming",a:"Ganna Pogrebna & Thomas T. Hills",v:""},
+  {n:20,p:"p4",t:"Cognitive Networks as Models of Cognition and Behaviour: An Introduction",a:"Massimo Stella",v:""},
+  {n:21,p:"p4",t:"Agent-Based Modelling in Social Networks",a:"Spyros Angelopoulos",v:""},
+  {n:22,p:"p4",t:"Modelling Context-Dependent Behaviour",a:"Marco Del Vecchio",v:""},
+  {n:23,p:"p4",t:"A Short Primer on Historical Natural Language Processing",a:"Thomas T. Hills & Alessandro Miani",v:""},
+  {n:24,p:"p4",t:"Behavioural Data in Complex Economic and Business Systems",a:"Glenn Parry",v:""},
+  {n:25,p:"p4",t:"Applications of Statistical Mechanics and Cyber-Physical Systems to Behaviour",a:"Fendy Santoso",v:""},
+  {n:26,p:"p4",t:"Systems Behaviour for Sustainable AI",a:"Aakanksha Jaiswal",v:""},
+  {n:27,p:"p4",t:"Systems Behaviour and Experimentation",a:"Yevgen Bogodistov",v:""},
+  {n:28,p:"p4",t:"Quantum Mechanics of Human Perception, Behaviour and Decision-Making",a:"Ivan S. Maksymov",v:""},
+  {n:29,p:"p5",t:"Applications of Behavioural Data Science",a:"Ganna Pogrebna",v:""},
+  {n:30,p:"p5",t:"Pro-Social Nudging",a:"Juliette Tobias-Webb",v:""},
+  {n:31,p:"p5",t:"Social Media Analytics",a:"Rob Procter",v:""},
+  {n:32,p:"p5",t:"Quantifying Luck",a:"Chengwei Liu",v:""},
+  {n:33,p:"p5",t:"Quantifying the Connection between Scenic Beauty and Reported Health Using Deep Learning and Econometrics",a:"Chanuki Illushka Seresinhe",v:""},
+  {n:34,p:"p5",t:"Money, Methodology and Happiness: Using Big Data to Study Causal Relationships between Income and Well-Being",a:"Gordon D. A. Brown, Edika Quispe-Torreblanca & John Gathergood",v:""},
+  {n:35,p:"p5",t:"Human–Data Interaction: The Case of Databox",a:"Jon Crowcroft, Gareth Tyson & Richard Mortier",v:""},
+  {n:36,p:"p5",t:"Natural Language Processing in Behavioural Data Science",a:"Marco Del Vecchio",v:""},
+  {n:37,p:"p5",t:"Understanding Collective Behaviour Using Online Data and Mobile Phones",a:"Federico Botta, Tobias Preis & Helen Susannah Moat",v:""},
+  {n:38,p:"p5",t:"Burstier Events: Analysing Human Memory over a Century of Events Using The New York Times",a:"Joseph L. Austerweil, Charlie Pilgrim & Kesong Cao",v:""},
+  {n:39,p:"p5",t:"Behavioural Data Science in Financial Services",a:"Akshay Nayak & Pruthvi Taranath",v:""},
+  {n:40,p:"p5",t:"XR, VR and AR Applications in Behavioural Data Science",a:"Toufique Soomro",v:""},
+  {n:41,p:"p5",t:"On Cryptoasset Traders' Behaviour",a:"Kateryna Kononova & Anton Dek",v:""},
+  {n:42,p:"p5",t:"Behavioural Data Science of Cybersecurity",a:"Ganna Pogrebna & Hung Nguyen",v:""},
+  {n:43,p:"p5",t:"BDS Ethics and Governance Pre-AI Act: Data Trusts as a Governance Tool",a:"Sylvie Delacroix & Jessica Montgomery",v:""},
+  {n:44,p:"p5",t:"BDS Ethics and Governance Post-AI Act: Responsible Network and Collective Choice Modelling",a:"Immaculate Motsi-Omoijiade",v:""},
+  {n:"—",p:"p6",t:"Concluding Remarks",a:"Ganna Pogrebna & Thomas T. Hills",v:""}
 ];
-const grid=document.getElementById('chapGrid'),filters=document.getElementById('filters');
-let active='all';
-function render(){
-  grid.innerHTML='';
-  CH.filter(c=>active==='all'||c.p===active).forEach(c=>{
-    const P=PARTS[c.p];
-    const el=document.createElement('div');el.className='chap';
-    el.innerHTML=`<span class="part" style="background:${P.bg};color:${P.fg}">${P.label}</span>
-      <h4>${c.n!=='—'?'Ch. '+c.n+' — ':''}${c.t}</h4>
+
+const grid = document.getElementById("chapGrid");
+const filters = document.getElementById("filters");
+let active = "all";
+
+function videoUrl(videoId) {
+  return "https://www.youtube.com/watch?v=" + encodeURIComponent(videoId);
+}
+
+function render() {
+  grid.innerHTML = "";
+
+  CH.filter(c => active === "all" || c.p === active).forEach(c => {
+    const P = PARTS[c.p];
+    const el = document.createElement("div");
+    el.className = "chap";
+
+    const chapterTitle = c.n !== "—" ? "Ch. " + c.n + " — " + c.t : c.t;
+
+    const videoHtml = c.v
+      ? `<a class="watch" style="color:${P.fg}" href="${videoUrl(c.v)}" target="_blank" rel="noopener">▶ Watch the overview</a>`
+      : `<span class="soon">Video coming soon</span>`;
+
+    el.innerHTML = `
+      <span class="part" style="background:${P.bg};color:${P.fg}">${P.label}</span>
+      <h4>${chapterTitle}</h4>
       <p class="auth">${c.a}</p>
-      ${c.v?`<a class="watch" style="color:${P.fg}" href="https://youtu.be/${c.v}">▶ Watch the overview</a>`:`<span class="soon">Video coming soon</span>`}`;
+      ${videoHtml}
+    `;
+
     grid.appendChild(el);
   });
 }
-function makeFilters(){
-  const all=[['all','All chapters'],...Object.entries(PARTS).filter(([k])=>k!=='intro').map(([k,v])=>[k,v.label])];
-  all.forEach(([k,label])=>{
-    const b=document.createElement('button');b.textContent=label;
-    if(k==='all')b.classList.add('active');
-    b.onclick=()=>{active=k;document.querySelectorAll('.filters button').forEach(x=>x.classList.remove('active'));b.classList.add('active');render();};
+
+function makeFilters() {
+  const all = [
+    ["all", "All chapters"],
+    ...Object.entries(PARTS)
+      .filter(([k]) => k !== "intro")
+      .map(([k, v]) => [k, v.label])
+  ];
+
+  all.forEach(([k, label]) => {
+    const b = document.createElement("button");
+    b.textContent = label;
+
+    if (k === "all") {
+      b.classList.add("active");
+    }
+
+    b.onclick = () => {
+      active = k;
+      document.querySelectorAll(".filters button").forEach(x => x.classList.remove("active"));
+      b.classList.add("active");
+      render();
+    };
+
     filters.appendChild(b);
   });
 }
-function copyCite(kind){
-  const apa="Pogrebna, G., & Hills, T. T. (Eds.). (2026). The Cambridge Handbook of Behavioural Data Science. Cambridge University Press. https://doi.org/10.1017/9781108939010";
-  const bib=`@book{pogrebna2026handbook,\n  editor    = {Pogrebna, Ganna and Hills, Thomas T.},\n  title     = {The Cambridge Handbook of Behavioural Data Science},\n  publisher = {Cambridge University Press},\n  year      = {2026},\n  doi       = {10.1017/9781108939010},\n  isbn      = {9781108837392}\n}`;
-  navigator.clipboard.writeText(kind==='apa'?apa:bib).then(()=>{
-    const note=document.createElement('div');
-    note.textContent='Citation copied';
-    note.style.cssText='position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1E1A3C;color:#fff;padding:10px 20px;border-radius:8px;font-size:14px;z-index:99';
-    document.body.appendChild(note);setTimeout(()=>note.remove(),1800);
+
+function copyCite(kind) {
+  const apa = "Pogrebna, G., & Hills, T. T. (Eds.). (2026). The Cambridge Handbook of Behavioural Data Science. Cambridge University Press. https://doi.org/10.1017/9781108939010";
+
+  const bib = `@book{pogrebna2026handbook,
+  editor    = {Pogrebna, Ganna and Hills, Thomas T.},
+  title     = {The Cambridge Handbook of Behavioural Data Science},
+  publisher = {Cambridge University Press},
+  year      = {2026},
+  doi       = {10.1017/9781108939010},
+  isbn      = {9781108837392}
+}`;
+
+  navigator.clipboard.writeText(kind === "apa" ? apa : bib).then(() => {
+    const note = document.createElement("div");
+    note.textContent = "Citation copied";
+    note.style.cssText = "position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:#1E1A3C;color:#fff;padding:10px 20px;border-radius:8px;font-size:14px;z-index:99";
+    document.body.appendChild(note);
+    setTimeout(() => note.remove(), 1800);
   });
 }
-makeFilters();render();
+
+makeFilters();
+render();
 </script>
+
 </body>
 </html>
